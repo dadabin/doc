@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="package" name="ChatLogs" basedir="." >
+  <description>
+  	BHG chatLogs v1.0
+  </description>
+  <property name="src.path" value="."/>
+  <property name="build.path" value="${src.path}/build"/>
+ <path id="lib">         
+   <fileset dir="lib">  
+      <include name="*.jar"/>  
+   </fileset>      
+ </path> 
+  <target name="init" >
+    <mkdir dir="${build.path}"/>
+    <mkdir dir="${build.path}/lib"/>
+    <mkdir dir="${build.path}/src"/>
+  </target>
+  <target name="compile" depends="init">
+  	<javac srcdir="src" destdir="${build.path}/src">
+      <classpath refid="lib"></classpath> 
+    </javac>
+    <copy todir="${build.path}/" file="${src.path}/plugin.xml"/> 
+  	<copy todir="${build.path}/src/org/bhg/openfire/chat/logs/" file="src/org/bhg/openfire/chat/logs/redis.properties"/>
+    <jar destfile="${build.path}/lib/plugin-chatLogs.jar" basedir="${build.path}/src"/>
+  </target>
+  <target name="package" depends="compile">
+    <jar destfile="${build.path}/chatLogs.jar" basedir="${build.path}"/>
+  </target>
+ 
+</project>

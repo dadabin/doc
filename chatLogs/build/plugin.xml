@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <class>org.bhg.openfire.chat.logs.ChatLogsPlugin</class>
+    <!-- Plugin meta-data -->
+    <name>Chat Logs Plugin</name>
+    <description>User Chat Message Logs Plugins.</description>
+    <author>100hg [http://blog.100hg.com]</author>
+    <version>1.0</version>
+    <date>28/03/2013</date>
+</plugin>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!--
+Automatically created by Tomcat JspC.
+-->
+<web-app>
+    <servlet>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dall_002dcontact_002dservice_jsp</servlet-name>
+        <servlet-class>com.hoo.openfire.plugin.chatLogs.chatLogs_002dall_002dcontact_002dservice_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dlast_002dcontact_002dservice_jsp</servlet-name>
+        <servlet-class>com.hoo.openfire.plugin.chatLogs.chatLogs_002dlast_002dcontact_002dservice_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dservice_jsp</servlet-name>
+        <servlet-class>com.hoo.openfire.plugin.chatLogs.chatLogs_002dservice_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dall_002dcontact_002dservice_jsp</servlet-name>
+        <url-pattern>/chatLogs-all-contact-service.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dlast_002dcontact_002dservice_jsp</servlet-name>
+        <url-pattern>/chatLogs-last-contact-service.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>com.hoo.openfire.plugin.chatLogs.chatLogs_002dservice_jsp</servlet-name>
+        <url-pattern>/chatLogs-service.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
